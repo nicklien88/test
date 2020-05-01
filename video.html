@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Video Player</title>
+	<script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+	<script type="text/javascript" src="https://drive.google.com/open?id=1Yl_m3Kp6F7u4PzIEF0a5bhekdLsZB85B"></script>
+	<style>
+		#header {
+			background-color: #ccff99;
+		}
+		#video-side {
+			margin-left: 10px;
+			float: left;
+		}
+		#srt-side {
+			width: 500px;
+			margin-left: 2
+			0px;
+			margin-right: 10px;
+			float: left;
+			background-color: #e6ffe6;
+			
+		}
+		.srt {
+			word-break: keep-all;
+			font-size: 30px;
+			padding: 10px;
+			font-family: "-apple-system", BlinkMacSystemFont, "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "Noto Sans Japanese", "ヒラギノ角ゴ Pro W3", "メイリオ", "Hiragino Kaku Gothic ProN", "MS PGothic", Osaka, "sans-serif";
+		}
+		#footer {
+			height: 40px; 
+			font-size: 20px; 
+			margin-top: 20px;
+			text-align: center; 
+			line-height: 40px;
+			background-color: #ccff99;
+		}
+		h1 { padding: 10px; font-size: 60px;}
+
+	</style>
+</head>
+<body style="margin: 0px;">
+	<div id="header">
+		<h1>Animetube</h1>
+	</div>
+  
+	<div id="video-side">
+		<iframe id="my-video" src="https://drive.google.com/file/d/1j3sP-AhK_CfFqg4-IlkoYLA3g6M2h-rN/preview" width="640" height="480"></iframe>
+	</div>
+
+	<div id="srt-side">
+		<div class="srt" data-video="my-video" data-srt="https://drive.google.com/file/d/1lmEGfxiDw4V3tytehYLJdHI-HmXGnAph/view?usp=sharing"></div>
+	</div>
+	<div style='clear:both;'></div>
+	<div id="footer">Lien Nick 製作</div>
+	
+</body>
+</html>
